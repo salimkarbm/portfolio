@@ -40,6 +40,7 @@ function navLinksClick(e) {
       tab.parentElement.classList.add('is-active')
       navLinks.classList.remove("open")
     })
+   
   }
   scrollSection(e)
 }
@@ -62,7 +63,7 @@ navToggle.addEventListener('click', () =>{
   humbuger.forEach(icon =>{
     icon.classList.toggle('hidden')
   })
- 
+  
 }
 )
 
