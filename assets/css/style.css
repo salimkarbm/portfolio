@@ -457,9 +457,7 @@ footer p.copyright i {
   .header-wrapper {
     width: 70vw !important;
   }
-  nav {
-    background: red;
-  }
+
   nav ul {
     margin: 0;
     padding: 2em 0;
@@ -473,7 +471,6 @@ footer p.copyright i {
     font-size: 1.2em;
     color: #ffffff;
   }
-
   .humbuger-icon > .material-icons {
     display: none;
   }
@@ -766,12 +763,14 @@ footer p.copyright i {
     font-size: 1.3em;
   }
   footer div {
-    margin-left: 1.3em;
+    margin: 0 0 0 1.3em;
     border-left: 0.3em solid #ffffff;
     height: 5em;
   }
   .footer section.mobile-footer {
-    padding-top: 12em;
+    padding: 12em 0 0 0;
+  }
+  section.mobile-footer p.copyright {
   }
   .footer p.social-media {
     display: none;
