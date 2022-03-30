@@ -604,7 +604,6 @@ footer p.copyright i {
     display: none;
   }
   section.sections {
-    padding-top: 5em;
     min-height: 65vh;
     justify-content: center;
     align-items: center;
@@ -656,18 +655,21 @@ footer p.copyright i {
     background: #6939dd;
     animation-name: heroimage;
     animation-duration: 4s;
+    animation-delay: 3s;
     position: relative;
+    opacity: 0;
     animation-fill-mode: forwards;
   }
 
-  @keyframes heroimage {
-    0% {
-      top: -35em;
-    }
-    100% {
-      top: 0;
-    }
+}
+@keyframes heroimage {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+} 
 
   .about-me-img-wrapper {
     width: 30vw;
@@ -677,10 +679,7 @@ footer p.copyright i {
   .portfolio-img-wrapper {
     width: 40vw;
   }
-  /* .about-me-wrapper {
-    display: flex;
-    align-items: center;
-  } */
+
   .about-me-content {
     flex-direction: row;
   }
@@ -746,8 +745,9 @@ footer p.copyright i {
     display: flex;
     justify-content: flex-end;
   }
-  footer {
+  footer.footer {
     background: #753ff6;
+    padding: 0;
   }
   footer section.desktop-footer {
     display: flex;
@@ -769,8 +769,6 @@ footer p.copyright i {
   }
   .footer section.mobile-footer {
     padding: 12em 0 0 0;
-  }
-  section.mobile-footer p.copyright {
   }
   .footer p.social-media {
     display: none;
