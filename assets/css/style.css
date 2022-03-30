@@ -661,15 +661,14 @@ footer p.copyright i {
     animation-fill-mode: forwards;
   }
 
-}
-@keyframes heroimage {
-  0% {
-    opacity: 0;
+  @keyframes heroimage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100% {
-    opacity: 1;
-  }
-} 
 
   .about-me-img-wrapper {
     width: 30vw;
