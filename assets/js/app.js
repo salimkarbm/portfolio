@@ -61,7 +61,7 @@ navToggle.addEventListener('click', () =>{
   //drop down menu on click
   navLinks.classList.toggle("open")
   humbuger.forEach(icon =>{
-    icon.classList.toggle('hidden')
+    icon.classList.toggle('close')
   })
   
 }
@@ -73,9 +73,9 @@ window.addEventListener('resize',()=>{
   if(document.body.clientWidth > 720){
      navLinks.classList.remove("open")
      humbuger.forEach(icon =>{
-      icon.classList.add('hidden')
+      icon.classList.add('close')
     })
-    showHamburger.classList.remove("hidden")
+    showHamburger.classList.remove("close")
   }
  
 })

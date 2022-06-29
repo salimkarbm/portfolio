@@ -261,6 +261,7 @@ section.toolkit ul li::before {
 .project-section {
   display: flex;
   flex-direction: column;
+  background: #d7cee3;
 }
 .portfolio-img-wrapper,
 .about-me-img-wrapper {
@@ -565,6 +566,17 @@ footer p.copyright i {
   }
   p.cv-button.btn {
     margin: 0 7em 0 0;
+  }
+  .footer section.mobile-footer{
+    display: none;
+  }
+  body footer.footer{
+   border:0;
+   /* opacity: 0.1; */
+   /* z-index: -1; */
+  }
+  .copyright-footer{
+    background:red;
   }
 }
 @media only screen and (min-width: 1024px) {
