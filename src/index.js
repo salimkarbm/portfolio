@@ -55,18 +55,6 @@ menuItems.forEach((menuItem) => {
 // }
 // )
 
-//listen for resize on the window
-window.addEventListener('resize',()=>{
-  if(document.body.clientWidth > 720){
-     menu.classList.remove("open-icon")
-     humbuger.forEach(icon =>{
-      icon.classList.add('close-icon')
-    })
-    showHamburger.classList.remove("close-icon")
-  }
- 
-})
-
 //listen for click events on navigations
 menu.addEventListener('click', navLinksClick)
 //activate active state when clicked
@@ -79,9 +67,10 @@ function navLinksClick(e) {
         .querySelector('.nav-item.active')
         .classList.remove('active')
       tab.parentElement.classList.add('active')
-      navLinks.classList.remove("open-icon")
+      menu.classList.remove("show-menu")
     })
   }
+ 
   scrollSection(e)
 }
 //scroll when click
@@ -93,3 +82,16 @@ function scrollSection(e) {
     behavior: 'smooth',
   })
 }
+
+
+//listen for resize on the window
+window.addEventListener('resize',()=>{
+  if(document.body.clientWidth > 720){
+     menu.classList.remove("open-icon")
+     humbuger.forEach(icon =>{
+      icon.classList.add('close-icon')
+    })
+    showHamburger.classList.remove("close-icon")
+  }
+ 
+})
