@@ -194,6 +194,10 @@ section.section-heading h3 span{
     width:80vw;
     justify-content: space-between;
   }
+  section.hero-section h1{
+    display:flex;
+    flex-direction: column;
+  }
   section.hero-section h3{
    margin-bottom:2.5rem;
   }
@@ -277,11 +281,6 @@ section.section-heading h3 span{
     gap:1rem;
    }
 }
-/* @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  nav .nav-links .nav-toggle {
-    display: none;
-  }
-} */
  @media only screen and (min-width: 993px) {
   header {
     padding: 2rem 5rem;
