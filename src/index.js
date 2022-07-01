@@ -4,9 +4,6 @@ const openIcon = document.querySelector('.open-icon');
 const closeIcon = document.querySelector('.close-icon');
 const menuItems = document.querySelectorAll('.menuItem');
 
-// const humbuger = document.querySelectorAll('.navIcon')
-// const showHamburger = document.querySelector("#humbuger")
-
 //listen for a dom event
 document.addEventListener('DOMContentLoaded', navbar)
 
@@ -17,7 +14,7 @@ function navbar() {
     ['Home', '#home'],
     ['About', '#about'],
     ['Portfolio', '#portfolio'],
-    ['Skils', '#skils'],
+    ['Skills', '#skills'],
     ['Contact', '#contact'],
   ]
   for (i = 0; i < links.length; i++) {
@@ -46,14 +43,6 @@ navToggle.addEventListener("click", toggleMenu);
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener("click", toggleMenu);
 });
-// navToggle.addEventListener('click', () =>{
-//   //drop down menu on click
-//   navLinks.classList.toggle("open-icon")
-//   humbuger.forEach(icon =>{
-//     icon.classList.toggle('close-icon')
-//   })
-// }
-// )
 
 //listen for click events on navigations
 menu.addEventListener('click', navLinksClick)
@@ -70,7 +59,6 @@ function navLinksClick(e) {
       menu.classList.remove("show-menu")
     })
   }
- 
   scrollSection(e)
 }
 //scroll when click
@@ -83,15 +71,3 @@ function scrollSection(e) {
   })
 }
 
-
-//listen for resize on the window
-window.addEventListener('resize',()=>{
-  if(document.body.clientWidth > 720){
-     menu.classList.remove("open-icon")
-     humbuger.forEach(icon =>{
-      icon.classList.add('close-icon')
-    })
-    showHamburger.classList.remove("close-icon")
-  }
- 
-})
