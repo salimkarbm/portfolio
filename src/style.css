@@ -88,9 +88,6 @@ header nav ul li a {
 header nav ul .active {
   border-bottom: 2px solid #82f9a1;
 }
-main.container {
-  margin:3rem 0;
-}
 section.section-heading{
   display:flex;
   flex-direction: column;
@@ -185,7 +182,8 @@ section.section-heading h3 span{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap:5rem;
+    gap:8rem;
+    margin:3rem 0;
   }
   section.hero-section{
     display:flex;
@@ -229,6 +227,11 @@ section.section-heading h3 span{
      padding: 0.5rem 0 0.5rem 0.5rem;
      background: #1C2C35;
      border-radius:0.5rem;
+   }
+   section.card-wrapper .card-2-section {
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
    }
    section.card-wrapper .card span{
     display:flex;
@@ -304,11 +307,15 @@ section.section-heading h3 span{
   .container p {
     font-size: 1.1rem;
   }
+  body .wrapper {
+    margin-top: 7rem;
+  }
   main.container {
     display:flex;
     flex-direction: column;
-    gap:5rem;
+    gap:8rem;
     align-items:center;
+    margin:3rem 0;
   }
   .container .hero-section {
     display: flex;
@@ -319,16 +326,17 @@ section.section-heading h3 span{
   }
   .container .hero-section .hero-image-wrapper {
     width:30vw;
-    display:flex;
-    align-items:center;
-    justify-content:center;
   }
   .container .hero-section .hero-image{
-    width:25vw;
+    width:30vw;
   }
   .container .hero-section h1{
-   display: flex;
+    display: flex;
     gap:1rem;
+  }
+  .container .hero-section h2{
+    line-height:2rem;
+    margin-bottom:0.5rem;
   }
   .container .hero-section h3{
    margin-bottom: 2rem;
@@ -336,25 +344,62 @@ section.section-heading h3 span{
   .container .hero-section p {
     width:40vw;
   }
-  .container .projects-section {
-    text-align: center;
-    margin-top: 3rem;
+  .about-section{
+    width:70vw;
   }
-  .container .projects-section .card-wrapper {
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 3rem;
+  .projects-section{
+    width:70vw;
   }
-  .container .projects-section .card-wrapper .card {
-    max-width: 40vw;
+   section.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+   }
+    section.card-wrapper .card{
+     display: flex;
+     flex-direction: column;
+     gap:3rem;
+     border-left: 0.5rem solid;
+     padding: 1.5rem 0 1rem 1.5rem;
+     background: #1C2C35;
+     border-radius:0.5rem;
+   }
+   section.card-wrapper .card-2-section {
+    display:flex;
+    gap:1.5rem;
+   }
+   .card2, .card3{
+    width:35vw;
+   }
+   section.card-wrapper .card span{
+    display:flex;
+    gap: 1.5rem;
+   }
+   section.card-wrapper .card1{
+    border-left-color:#CCA9F4 ;
+   }
+   section.card-wrapper .card2{
+    border-left-color:#81F59B;
+   }
+   section.card-wrapper .card3{
+    border-left-color:#D9534D;
+   }
+   section.card-wrapper .card4{
+    display:none;
+    border-left-color:#61DAFB;
+   }
+   section.card-wrapper .card span .fa-external-link{
+    color:#82f9a1;
+   } 
+   .container .skills-section {
+    width:70vw;
   }
-  .container .skills-section {
-    text-align: center;
-    margin-top: 3rem;
-  }
-  .container .skills-section .skills-div-wrapper {
-    max-width: 50vw;
-  }
+  .container .skills-section .skills-section-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 0.5em;
+  } 
   .container .contact-section {
     text-align: center;
     margin-top: 3rem;
@@ -365,5 +410,33 @@ section.section-heading h3 span{
   .footer-section p {
     font-size: 1rem;
   }
+  section.contact-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#1C2C35;
+    width:100vw;
+    padding: 1.5rem 0;
+   }
+   section.contact-section .contact-content{
+    display:flex;
+    width:70vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   footer.footer-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+   }
+   footer.footer-section .socials{
+    display:flex;
+    gap:1rem;
+   }
 } 
-
+@media only screen and (min-width: 1300px) {
+}
