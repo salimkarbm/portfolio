@@ -67,7 +67,6 @@ header nav .logo {
   color: #82f9a1;
   font-size: 1.5rem;
   padding: 8px 0;
-  text-decoration: underline;
 }
 header nav .nav-links {
   display: flex;
@@ -194,6 +193,7 @@ section.section-heading h3 span{
   section.hero-section h1{
     display:flex;
     flex-direction: column;
+    line-height:3rem;
   }
   section.hero-section h3{
    margin-bottom:2.5rem;
@@ -201,7 +201,6 @@ section.section-heading h3 span{
    section.hero-section h2{
     padding-top:0.3rem;
    }
-
    section.hero-section .hero-image{
     display:none;
    }
@@ -287,12 +286,12 @@ section.section-heading h3 span{
     gap:1rem;
    }
 }
- @media only screen and (min-width: 993px) {
+ @media only screen and (min-width: 993px)   {
   header {
     padding: 2rem 5rem;
   }
   header nav {
-    max-width: 70vw;
+    width: 70vw;
     margin: 0 auto;
   }
   header nav .nav-links .nav-toggle {
@@ -404,7 +403,7 @@ section.section-heading h3 span{
     text-align: center;
     margin-top: 3rem;
   }
-  .container .contact-section .contact-section p {
+  .container .contact-section .contact-content p {
     max-width: 50vw;
   }
   .footer-section p {
@@ -438,5 +437,25 @@ section.section-heading h3 span{
     gap:1rem;
    }
 } 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+  header nav {
+    width: 60vw;
+     }
+     .container .hero-section {
+      width:60vw;
+    }
+    .container .hero-section .hero-image{
+      width:20vw;
+       
+    }
+    .about-section{
+      width:60vw;
+    }
+    .projects-section{
+      width:60vw;
+    }
+    .container .skills-section {
+      width:60vw;
+    }
+    
 }
