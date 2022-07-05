@@ -102,12 +102,7 @@ section.section-heading{
   align-items:center;
   gap: 0.5rem;
 }
-section.section-heading h3 span hr{
-  width:20vw;
-}
-section.section-heading h3 span{
-  color:#82f9a1;
-}
+
 
 @media only screen and (max-width: 992px) {
   .menu {
@@ -204,6 +199,12 @@ section.section-heading h3 span{
    section.hero-section .hero-image{
     display:none;
    }
+   section.section-heading h3 span hr{
+    width:20vw;
+  }
+  section.section-heading h3 span{
+    color:#82f9a1;
+  }
    section.about-section{
     width:80vw;
    }
@@ -343,6 +344,12 @@ section.section-heading h3 span{
   .container .hero-section p {
     width:40vw;
   }
+  section.section-heading h3 span hr{
+    width:10vw;
+  }
+  section.section-heading h3 span{
+    color:#82f9a1;
+  }
   .about-section{
     width:70vw;
   }
@@ -453,6 +460,10 @@ section.section-heading h3 span{
     }
     .projects-section{
       width:60vw;
+    }
+    section.card-wrapper .card{
+      padding: 1.5rem 3rem;
+      
     }
     .container .skills-section {
       width:60vw;
