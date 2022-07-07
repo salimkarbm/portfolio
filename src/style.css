@@ -321,6 +321,9 @@ section.section-heading{
     display: flex;
     width:70vw;
   }
+  span i{
+    font-size:1.3rem;
+  }
   .container .hero-section .hero-profile{
     width:40vw;
   }
